@@ -80,7 +80,7 @@ const Notifications: FC<NotificationsProps> = ({ addPadding }) => {
               Refer to{' '}
               <Link
                 color="inverted"
-                href="https://github.com/awslabs/threat-composer"
+                href="https://github.com/mimicarina/threat-composer"
                 external={true}
               >
                 threat-composer GitHub Repo

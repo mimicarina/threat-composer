@@ -201,7 +201,7 @@ const Config: FC<ConfigProps> = ({ initialConfig }) => {
           <p>
             <small>
               <a
-                href="https://github.com/awslabs/threat-composer"
+                href="https://github.com/mimicarina/threat-composer"
                 target="_blank"
               >
                 GitHub Project

@@ -57,7 +57,7 @@ No changes you make within Example workspace will be saved. If you wish to modif
 
 We value your input! Please take a moment to provide us with your [feedback](https://www.pulse.aws/survey/3AGEAOXZ). Thank you for helping us improve!
 
-For bugs, issues and feature requests, please use [GitHub issues](https://github.com/awslabs/threat-composer/issues).
+For bugs, issues and feature requests, please use [GitHub issues](https://github.com/mimicarina/threat-composer/issues).
 
 ## **Usage**
 
@@ -241,7 +241,7 @@ Learn more about customising CDK bootstrap [here](https://docs.aws.amazon.com/cd
 
 1. Clone the repository
 
-   `git clone https://github.com/awslabs/threat-composer.git `
+   `git clone https://github.com/mimicarina/threat-composer.git `
 
    `cd threat-composer`
 
@@ -279,7 +279,7 @@ You may need to include the `--trust` option when bootstrapping the dev or produ
 
 1. Clone the repository
 
-   `git clone https://github.com/awslabs/threat-composer.git`
+   `git clone https://github.com/mimicarina/threat-composer.git`
 
    `cd threat-composer`
 
@@ -532,7 +532,7 @@ Threats that are included in the example threats data are made make available to
 
 ## **Contribution guide**
 
-Contribution guide are available at the [Contributing Guidelines](https://github.com/awslabs/threat-composer/blob/main/CONTRIBUTING.md).
+Contribution guide are available at the [Contributing Guidelines](https://github.com/mimicarina/threat-composer/blob/main/CONTRIBUTING.md).
 
 ## License
 
