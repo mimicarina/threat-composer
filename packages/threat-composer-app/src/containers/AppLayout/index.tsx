@@ -53,22 +53,22 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({
         type: 'link',
       },
       {
-        text: 'Service Feature Overview',
+        text: 'Feature Overview',
         href: generateUrl(ROUTE_APPLICATION_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Service Feature Architecture',
+        text: 'Feature Architecture',
         href: generateUrl(ROUTE_ARCHITECTURE_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Service Feature Inputs and Outputs',
+        text: 'Feature Inputs and Outputs',
         href: generateUrl(ROUTE_DATAFLOW_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Service Feature Assumptions',
+        text: 'Feature Assumptions',
         href: generateUrl(ROUTE_ASSUMPTION_LIST_PATH, searchParams, workspaceId),
         type: 'link',
       },
