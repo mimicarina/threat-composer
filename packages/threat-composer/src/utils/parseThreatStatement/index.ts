@@ -41,7 +41,7 @@ const parseThreatStatement = <T extends any>(args: ThreatStatementParseArgType<T
     const token = template.slice(startIndex + 1, endIndex) as ThreatFieldTypes;
     const content = correctIndefiniteArticle(getFieldContentByToken(token, args.statement));
 
-    // This is to cater for the A for the threat source.
+    // This is to cater for the A for the risk source.
     if (before === 'A ') {
       before = before.replace('A', a(content, { capitalize: true, articleOnly: true }));
     }

@@ -21,9 +21,9 @@ import styles from '../../styles';
 import InfoModalBase from '../InfoModalBase';
 
 const InfoModalIntro: FC = () => {
-  return (<InfoModalBase title='threat-composer'>
+  return (<InfoModalBase title='risk-composer'>
     <p>This tool has <span css={css(styles.contentHighlight)}>
-      a singular focus on the <i>“What can go wrong?”</i> threat modeling step</span>, with the aim of making it faster and easier for you to
+      a singular focus on the <i>“What can go wrong?”</i> risk modeling step</span>, with the aim of making it faster and easier for you to
     </p>
     <div css={css(styles.featureSets)}>
       <Grid gridDefinition={[

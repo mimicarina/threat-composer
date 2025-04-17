@@ -24,7 +24,7 @@ export const EXAMPLES_SECTION_WORKSPACE_LABEL = 'Examples';
 export const SINGLE_FIELD_INPUT_TAG_MAX_LENGTH = 30;
 // Metadata key, Workspace name
 export const SINGLE_FIELD_INPUT_SMALL_MAX_LENGTH = 50;
-// Threat statement elements, Application name, custom template length
+// Risk statement elements, Application name, custom template length
 export const SINGLE_FIELD_INPUT_MAX_LENGTH = 200;
 // Entity comments, Assumption/Mitigation content
 export const FREE_TEXT_INPUT_SMALL_MAX_LENGTH = 1000;

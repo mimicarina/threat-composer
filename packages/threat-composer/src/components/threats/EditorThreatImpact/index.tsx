@@ -62,7 +62,7 @@ const EditorThreatImpact: FC<EditorProps> = forwardRef<TextareaProps.Ref, Editor
           spellcheck
           onChange={({ detail }) => handleChange(detail.value)}
           value={statement.threatImpact || ''}
-          placeholder="Enter threat impact"
+          placeholder="Enter risk impact"
           validateData={TemplateThreatStatementSchema.shape.threatImpact.safeParse}
           rows={2}
           singleLine

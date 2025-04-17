@@ -40,7 +40,7 @@ const LandingPage: FC<LandingPageProps> = ({
       header={
         <Header
           variant="h1"
-          description="A threat modeling tool to help humans to reduce time-to-value when threat modeling"
+          description="A risk modeling tool to help humans to reduce time-to-value when risk modeling"
           actions={
             <SpaceBetween direction="horizontal" size="s">
               <Button onClick={() => setFileImportModalVisible(true)}>Import existing</Button>
@@ -50,7 +50,7 @@ const LandingPage: FC<LandingPageProps> = ({
             </SpaceBetween>
           }
         >
-          Threat Composer
+          Risk Composer
         </Header>
       }
     >
@@ -69,21 +69,21 @@ const LandingPage: FC<LandingPageProps> = ({
           </Box>
         </Container>
         <Container
-          header={<Header variant="h2">View an example threat model</Header>}
+          header={<Header variant="h2">View an example risk model</Header>}
         >
           <ColumnLayout columns={2}>
             <TextContent>
               <p>
-                We've included a base threat model of the Threat Composer tool
+                We've included a base risk model of the Risk Composer tool
                 itself as an example. The aim is to provide a common reference
-                point for people who are starting off with Threat Composer. You
-                may want to use this as the base threat model as a starting
-                point to generate a contextualised threat model for your own
-                specific needs and deployment of Threat Composer.
+                point for people who are starting off with Risk Composer. You
+                may want to use this as the base risk model as a starting
+                point to generate a contextualised risk model for your own
+                specific needs and deployment of Risk Composer.
               </p>
               <ul>
                 <li>
-                  To view the example threat model simply switch to the
+                  To view the example risk model simply switch to the
                   system-defined <b>Example</b> Workspace.
                 </li>
                 <li>
@@ -104,25 +104,25 @@ const LandingPage: FC<LandingPageProps> = ({
         <Container header={<Header variant="h2">Benefits and features</Header>}>
           <ColumnLayout columns={2} variant="text-grid">
             <TextContent>
-              <h3>Reduce time-to-value when performing threat modeling</h3>
+              <h3>Reduce time-to-value when performing risk modeling</h3>
               <p>
                 Helps you focus on brainstorming and collaboration. Guides you
-                through the threat model process. Inspires you with examples.
+                through the risk model process. Inspires you with examples.
               </p>
             </TextContent>
             <TextContent>
-              <h3>Threat models-as-code</h3>
+              <h3>Risk models-as-code</h3>
               <p>
-                Produces threat models that can be exported and shared as
-                structured JSON, making it easy to version control your threat
+                Produces risk models that can be exported and shared as
+                structured JSON, making it easy to version control your risk
                 models. Additionally supports Markdown and PDF (browser
                 dependant)
               </p>
             </TextContent>
             <TextContent>
-              <h3>Opinionated threat statement structure</h3>
+              <h3>Opinionated risk statement structure</h3>
               <p>
-                Helps you create useful threat statements that help you devise
+                Helps you create useful risk statements that help you devise
                 mitigations and to prioritize.
               </p>
             </TextContent>
@@ -130,7 +130,7 @@ const LandingPage: FC<LandingPageProps> = ({
               <h3>Client-side storage and workspace separation</h3>
               <p>
                 Data persisted only client-side with the browser, with workspace
-                separation to allow you to work across multiple threat models.
+                separation to allow you to work across multiple risk models.
               </p>
             </TextContent>
             <TextContent>
@@ -153,8 +153,8 @@ const LandingPage: FC<LandingPageProps> = ({
         <Container header={<Header variant="h2">Related resources</Header>}>
           <ColumnLayout columns={2} variant="text-grid">
             <TextContent>
-              <Link external href="https://github.com/awslabs/threat-composer">
-                Threat Composer - GitHub Repository
+              <Link external href="https://github.com/awslabs/risk-composer">
+                Risk Composer - GitHub Repository
               </Link>
               <p>
                 Get access to the latest source code, raise bugs, and make
@@ -164,23 +164,23 @@ const LandingPage: FC<LandingPageProps> = ({
             <TextContent>
               <Link
                 external
-                href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/13274/threat-modeling-the-right-way-for-builders-workshop"
+                href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/13274/risk-modeling-the-right-way-for-builders-workshop"
               >
-                Threat modeling for builders - AWS Skills Builder eLearning
+                Risk modeling for builders - AWS Skills Builder eLearning
               </Link>
               <p>
-                Learn how to threat model using this eLearning training course.
+                Learn how to risk model using this eLearning training course.
               </p>
             </TextContent>
             <TextContent>
               <Link
                 external
-                href="https://aws.amazon.com/blogs/security/how-to-approach-threat-modeling"
+                href="https://aws.amazon.com/blogs/security/how-to-approach-risk-modeling"
               >
-                How to approach threat modeling - AWS Security Blog
+                How to approach risk modeling - AWS Security Blog
               </Link>
               <p>
-                Learn about approaches to integrate threat modeling into your
+                Learn about approaches to integrate risk modeling into your
                 organization.
               </p>
             </TextContent>

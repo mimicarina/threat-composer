@@ -1,1 +1,1 @@
-# Threat Composer UI Components Library
+# Risk Composer UI Components Library

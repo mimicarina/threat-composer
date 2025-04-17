@@ -26,7 +26,7 @@ export const AssumptionSchema = ContentEntityBaseSchema.extend({
 export type Assumption = z.infer<typeof AssumptionSchema>;
 
 export const AssumptionLinkSchema = EntityLinkBaseSchema.extend({
-  type: z.union([z.literal('Mitigation'), z.literal('Threat')]),
+  type: z.union([z.literal('Mitigation'), z.literal('Risk')]),
   /**
    * The assumption being linked.
    */

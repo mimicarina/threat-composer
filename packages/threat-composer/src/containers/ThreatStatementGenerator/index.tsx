@@ -35,7 +35,7 @@ export interface ThreatStatementGeneratorInnerProps {
 }
 
 /**
- * Main component for Threat Statement Generator.
+ * Main component for Risk Statement Generator.
  * This component can be imported and used in other react app.
  */
 const ThreatStatementGenerator: FC<ThreatStatementGeneratorInnerProps> = ({

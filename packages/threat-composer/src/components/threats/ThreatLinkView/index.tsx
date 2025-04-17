@@ -61,7 +61,7 @@ const ThreatLinkComponent: FC<ThreatLinkProps> = ({
       }}
       filteringType='manual'
       enteredTextLabel={value => `Use: "${value}"`}
-      placeholder="Search threat"
+      placeholder="Search risk"
       empty="No matches found"
     />
     <div
@@ -73,7 +73,7 @@ const ThreatLinkComponent: FC<ThreatLinkProps> = ({
         items={
           linkedThreats.map(x => ({
             label: x.statement,
-            dismissLabel: `Unlink threat ${x.numericId}`,
+            dismissLabel: `Unlink risk ${x.numericId}`,
           }))
         }
         onDismiss={({ detail: { itemIndex } }) => {

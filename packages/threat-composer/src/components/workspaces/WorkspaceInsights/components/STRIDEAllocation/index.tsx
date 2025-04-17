@@ -129,13 +129,13 @@ const STRIDEAllocation: FC<WorkspaceInsightsProps> = ({
         >
           <b>No threats available</b>
           <Box variant="p" color="text-body-secondary">
-            Start by adding a threat to this workspace
+            Start by adding a risk to this workspace
           </Box>
-          <Button variant="primary" onClick={() => handleAddStatement()}>Add a threat</Button>
+          <Button variant="primary" onClick={() => handleAddStatement()}>Add a risk</Button>
         </Box>
       ) : (
         <div>
-          <FormField label="Filter by threat priority">
+          <FormField label="Filter by risk priority">
             <Select
               selectedOption={
                 LEVEL_SELECTOR_OPTIONS_INCLUDING_ALL.find(
@@ -161,7 +161,7 @@ const STRIDEAllocation: FC<WorkspaceInsightsProps> = ({
             <Box padding="s">
               <BarChart
                 series={barSeries}
-                ariaLabel="Threat category allocation chart"
+                ariaLabel="Risk category allocation chart"
                 emphasizeBaselineAxis={false}
                 height={280}
                 hideFilter

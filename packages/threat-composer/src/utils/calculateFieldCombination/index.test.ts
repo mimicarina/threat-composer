@@ -21,8 +21,8 @@ describe('calculateFieldCombination', () => {
     const statement: TemplateThreatStatement = {
       id: 'TEST_01',
       numericId: -1,
-      threatSource: 'threat actor',
-      threatAction: 'perform a threat action',
+      threatSource: 'risk actor',
+      threatAction: 'perform a risk action',
     };
 
     expect(calculateFieldCombination(statement).fieldCombination).toBe(5);

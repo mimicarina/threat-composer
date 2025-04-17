@@ -213,7 +213,7 @@ export const ThreatStatementEditorInner: FC<ThreatStatementEditorProps & { editi
         linkedAssumptionIds && linkedAssumptionIds.length > 0 && addAssumptionLinks(linkedAssumptionIds.map(la => ({
           assumptionId: la,
           linkedId: id,
-          type: 'Threat',
+          type: 'Risk',
         })));
         linkedMitigationIds && linkedMitigationIds.length > 0 && addMitigationLinks(linkedMitigationIds.map(lm => ({
           mitigationId: lm,
@@ -227,12 +227,12 @@ export const ThreatStatementEditorInner: FC<ThreatStatementEditorProps & { editi
         toAddlinkedAssumptionIds && toAddlinkedAssumptionIds.length > 0 && addAssumptionLinks(toAddlinkedAssumptionIds.map(la => ({
           assumptionId: la,
           linkedId: id,
-          type: 'Threat',
+          type: 'Risk',
         })));
         toRemovelinkedAssumptionIds && toRemovelinkedAssumptionIds.length > 0 && removeAssumptionLinks(toRemovelinkedAssumptionIds.map(la => ({
           assumptionId: la,
           linkedId: id,
-          type: 'Threat',
+          type: 'Risk',
         })));
         const toAddlinkedMitigationIds = linkedMitigationIds.filter(x =>
           !prevLinkedMitigationIds.includes(x));
@@ -380,7 +380,7 @@ export const ThreatStatementEditorInner: FC<ThreatStatementEditorProps & { editi
   }, [editingStatement.numericId, threatPackId]);
 
   if (!editingStatement) {
-    return <TextContent>Not threat statement editing in place</TextContent>;
+    return <TextContent>Not risk statement editing in place</TextContent>;
   }
 
   return (

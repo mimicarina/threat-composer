@@ -39,7 +39,7 @@ const Header: FC<HeaderProps> = ({
   const actions = useMemo(() => {
     return (
       <SpaceBetween direction="horizontal" size="xs">
-        <Button onClick={onCancel}>Threat list</Button>
+        <Button onClick={onCancel}>Risk list</Button>
         {onStartOver && <Button onClick={onStartOver}>Start over</Button>}
         <Button variant="primary" onClick={onComplete} disabled={!statement.statement}>
           {saveButtonText}
@@ -48,7 +48,7 @@ const Header: FC<HeaderProps> = ({
   }, [onComplete, onCancel, onStartOver]);
 
   return (
-    <HeaderComponent variant='h1' actions={actions}>{!statement.numericId || statement.numericId === -1 ? undefined : `Threat ${statement.numericId}`}</HeaderComponent>
+    <HeaderComponent variant='h1' actions={actions}>{!statement.numericId || statement.numericId === -1 ? undefined : `Risk ${statement.numericId}`}</HeaderComponent>
   );
 };
 

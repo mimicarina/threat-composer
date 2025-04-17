@@ -160,7 +160,7 @@ const Overview: FC<WorkspaceInsightsProps> = ({
         onLinkFollow={handleThreatListLinkClicked({
           priority: LEVEL_NOT_SET,
         })} />
-      <LabelValuePair label='Threat progress'
+      <LabelValuePair label='Risk progress'
         showWarning
         value={completedThreats}
         totalValue={totalThreats}

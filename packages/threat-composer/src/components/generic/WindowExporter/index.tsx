@@ -20,7 +20,7 @@ import useRemoveData from '../../../hooks/useRemoveData';
 import convertToMarkdown from '../../../utils/convertToMarkdown';
 
 /**
- * Export threat-composer functionalities via window object.
+ * Export risk-composer functionalities via window object.
  */
 const WindowExporter: FC<PropsWithChildren<{}>> = ({ children }) => {
   const { getWorkspaceData, parseImportedData, importData } = useExportImport();

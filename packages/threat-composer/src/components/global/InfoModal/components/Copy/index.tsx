@@ -16,7 +16,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { FC } from 'react';
-import threatStatementCopy from '../../../../../assets/threat-statement-copy.png';
+import threatStatementCopy from '../../../../../assets/risk-statement-copy.png';
 import styles from '../../styles';
 import InfoModalBase from '../InfoModalBase';
 

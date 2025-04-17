@@ -17,7 +17,7 @@ import parseThreatStatement from '.';
 import { TemplateThreatStatement } from '../../customTypes';
 
 describe('parseThreatStatement', () => {
-  test('parses threat statement element with template and generates output', () => {
+  test('parses risk statement element with template and generates output', () => {
     const statement: TemplateThreatStatement = {
       id: 'newId',
       numericId: -1,

@@ -155,7 +155,7 @@ const FileImport: FC<FileImportProps> = ({
         {error}
       </Alert>}
       {!onPreview && composerMode !== 'Full' && data && data.threats && data.threats.length > 0 && <Alert key="info" statusIconAriaLabel="Info" type="info" >
-        {data.threats.length} threat statement loaded
+        {data.threats.length} risk statement loaded
       </Alert>}
     </SpaceBetween>
   </Modal>;

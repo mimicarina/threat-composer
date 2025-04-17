@@ -37,10 +37,10 @@ export const getMitigationsContent = async (
       const assumpptionLinks = data.assumptionLinks?.filter(al => al.linkedId === x.id) || [];
 
       const threatsContent = threats.map(tl => {
-        const threat = data.threats?.find(s => s.id === tl.linkedId);
-        if (threat) {
-          const threatId = `T-${standardizeNumericId(threat.numericId)}`;
-          return `[**${threatId}**](#${threatId}): ${escapeMarkdown(threat.statement || '')}`;
+        const risk = data.threats?.find(s => s.id === tl.linkedId);
+        if (risk) {
+          const threatId = `T-${standardizeNumericId(risk.numericId)}`;
+          return `[**${threatId}**](#${threatId}): ${escapeMarkdown(risk.statement || '')}`;
         }
         return null;
       }).filter(t => !!t).join('<br/>');

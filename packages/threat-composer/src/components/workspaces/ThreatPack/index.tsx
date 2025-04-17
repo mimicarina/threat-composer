@@ -26,7 +26,7 @@ import Table, { ColumnDefinition } from '../../generic/Table';
 
 export interface ThreatPackProp {
   threatPackId: string;
-  onEditThreat?: (threatPackId: string, threat: TemplateThreatStatement) => void;
+  onEditThreat?: (threatPackId: string, risk: TemplateThreatStatement) => void;
 }
 
 const ThreatPack: FC<ThreatPackProp> = ({
@@ -60,14 +60,14 @@ const ThreatPack: FC<ThreatPackProp> = ({
   const colDef: ColumnDefinition<TemplateThreatStatement>[] = useMemo(() => [
     {
       id: 'statement',
-      header: 'Threat',
+      header: 'Risk',
       cell: (data) => data.statement,
       sortingField: 'statement',
       minWidth: 500,
     },
     {
       id: 'threatSource',
-      header: 'Threat source',
+      header: 'Risk source',
       cell: (data) => data.threatSource,
       sortingField: 'threatSource',
     },
@@ -79,13 +79,13 @@ const ThreatPack: FC<ThreatPackProp> = ({
     },
     {
       id: 'threatImpact',
-      header: 'Threat impact',
+      header: 'Risk impact',
       cell: (data) => data.threatImpact,
       sortingField: 'threatImpact',
     },
     {
       id: 'threatAction',
-      header: 'Threat action',
+      header: 'Risk action',
       cell: (data) => data.threatAction,
       sortingField: 'threatAction',
     },
@@ -145,7 +145,7 @@ const ThreatPack: FC<ThreatPackProp> = ({
       <Header
         variant="h2"
       >
-        Threat Pack - {threatPack.name}
+        Risk Pack - {threatPack.name}
       </Header>
     }
   >

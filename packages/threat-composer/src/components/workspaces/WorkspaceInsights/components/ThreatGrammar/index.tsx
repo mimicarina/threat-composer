@@ -104,13 +104,13 @@ const ThreatGrammar: FC<WorkspaceInsightsProps> = ({
       title: 'Inputs for mitigation',
       type: 'bar',
       data: [
-        { x: 'Threat source', y: countThreatSource },
+        { x: 'Risk source', y: countThreatSource },
         {
           x: 'Prerequisites',
           y: countPrerequisites,
         },
         {
-          x: 'Threat action',
+          x: 'Risk action',
           y: countThreatAction,
         },
       ],
@@ -120,7 +120,7 @@ const ThreatGrammar: FC<WorkspaceInsightsProps> = ({
       title: 'Inputs for prioritisation',
       type: 'bar',
       data: [
-        { x: 'Threat impact', y: countThreatImpact },
+        { x: 'Risk impact', y: countThreatImpact },
         {
           x: 'Impacted goal',
           y: countImpactedGoal,
@@ -145,13 +145,13 @@ const ThreatGrammar: FC<WorkspaceInsightsProps> = ({
         >
           <b>No threats available</b>
           <Box variant="p" color="text-body-secondary">
-            Start by adding a threat to this workspace
+            Start by adding a risk to this workspace
           </Box>
-          <Button variant="primary" onClick={() => handleAddStatement()}>Add a threat</Button>
+          <Button variant="primary" onClick={() => handleAddStatement()}>Add a risk</Button>
         </Box>
       ) : (
         <div>
-          <FormField label="Filter by threat priority">
+          <FormField label="Filter by risk priority">
             <Select
               selectedOption={
                 LEVEL_SELECTOR_OPTIONS_INCLUDING_ALL.find(
@@ -177,7 +177,7 @@ const ThreatGrammar: FC<WorkspaceInsightsProps> = ({
             <Box padding="s">
               <BarChart
                 series={barSeries}
-                ariaLabel="Threat Grammer Chart"
+                ariaLabel="Risk Grammer Chart"
                 emphasizeBaselineAxis={false}
                 height={245}
                 hideFilter

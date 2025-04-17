@@ -41,27 +41,27 @@ export const ThreatStatementImpactedAssetItem = z.string().max(SINGLE_FIELD_INPU
 
 export const TemplateThreatStatementSchema = EntityBaseSchema.extend({
   /**
-    * Source of the threat.
+    * Source of the risk.
     */
   threatSource: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH).optional(),
   /**
-    * Prerequisites of the threat.
+    * Prerequisites of the risk.
     */
   prerequisites: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH).optional(),
   /**
-    * Threat action.
+    * Risk action.
     */
   threatAction: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH).optional(),
   /**
-    * Impact of the threat.
+    * Impact of the risk.
     */
   threatImpact: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH).optional(),
   /**
-    * Impacted goal of the threat.
+    * Impacted goal of the risk.
     */
   impactedGoal: ThreatStatementImpactedGoalItem.array().optional(),
   /**
-    * Impacted assets of the threat.
+    * Impacted assets of the risk.
     */
   impactedAssets: ThreatStatementImpactedAssetItem.array().optional(),
   /**
@@ -69,7 +69,7 @@ export const TemplateThreatStatementSchema = EntityBaseSchema.extend({
     */
   statement: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH * 7).optional(),
   /**
-    * The custom templates applied to the threat statement.
+    * The custom templates applied to the risk statement.
     */
   customTemplate: z.string().max(SINGLE_FIELD_INPUT_MAX_LENGTH).optional(),
   /**
@@ -81,7 +81,7 @@ export const TemplateThreatStatementSchema = EntityBaseSchema.extend({
    */
   status: StatusSchema.refine((schema) => {
     return !schema || threatStatus.map(x => x.value).includes(schema);
-  }, 'Invalid threat status'),
+  }, 'Invalid risk status'),
 }).strict();
 
 export type TemplateThreatStatement = z.infer<typeof TemplateThreatStatementSchema>;

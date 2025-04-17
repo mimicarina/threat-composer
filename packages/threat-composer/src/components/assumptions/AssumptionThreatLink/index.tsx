@@ -32,7 +32,7 @@ const AssumptionThreatLinkComponent: FC<AssumptionThreatLinkProps> = ({
   const { getAssumptionEntityLinks } = useAssumptionLinksContext();
 
   useEffect(() => {
-    const _assumptionLinks = getAssumptionEntityLinks(assumptionId, 'Threat');
+    const _assumptionLinks = getAssumptionEntityLinks(assumptionId, 'Risk');
     setAssumptionLinks(_assumptionLinks || []);
   }, [getAssumptionEntityLinks, assumptionId]);
 
@@ -47,7 +47,7 @@ const AssumptionThreatLinkComponent: FC<AssumptionThreatLinkProps> = ({
     onAddThreatLink={(threatId) => addAssumptionLink({
       linkedId: threatId,
       assumptionId,
-      type: 'Threat',
+      type: 'Risk',
     })}
     onRemoveThreatLink={(threatId) => removeAssumptionLink(assumptionId, threatId)}
   />);

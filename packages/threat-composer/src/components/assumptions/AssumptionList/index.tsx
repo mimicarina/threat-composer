@@ -89,7 +89,7 @@ const AssumptionList: FC = () => {
 
     if (selectedLinkedThreatsFilter !== ALL) {
       output = output.filter(st => {
-        return assumptionLinkList.some(al => al.assumptionId === st.id && al.type === 'Threat') ?
+        return assumptionLinkList.some(al => al.assumptionId === st.id && al.type === 'Risk') ?
           selectedLinkedThreatsFilter === WITH_LINKED_ENTITY :
           selectedLinkedThreatsFilter === WITHOUT_NO_LINKED_ENTITY;
       });
@@ -150,7 +150,7 @@ const AssumptionList: FC = () => {
       assumptionLinks.push({
         linkedId: id,
         assumptionId: updated.id,
-        type: 'Threat',
+        type: 'Risk',
       });
     });
 

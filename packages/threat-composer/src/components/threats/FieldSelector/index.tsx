@@ -161,7 +161,7 @@ const FieldSelector: FC<FieldSelectorProps> = ({
         variant="icon"
         onItemClick={handleMoreActions} />
       </SpaceBetween>}
-      description='Start by clicking ANY field you like and work from there...'>Let's write a threat statement!</Header>}>
+      description='Start by clicking ANY field you like and work from there...'>Let's write a risk statement!</Header>}>
     <SpaceBetween direction='vertical' size='s'>
       <TextContent>
         <div css={styles.selector}>

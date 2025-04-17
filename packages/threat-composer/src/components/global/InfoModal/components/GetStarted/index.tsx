@@ -30,9 +30,9 @@ const InfoModalGetStarted: FC<InfoModalGetStartedProps> = ({ onClick }) => {
       <ol>
         <li>Do one thing, well</li>
         <li>Optimise for approachability over completeness</li>
-        <li>Encourage (not mandate) more complete threat statements</li>
+        <li>Encourage (not mandate) more complete risk statements</li>
         <li>Spur creativity through example</li>
-        <li>Support iterative threat statement writing</li>
+        <li>Support iterative risk statement writing</li>
         <li>No user-supplied data leaves the browser</li>
       </ol>
     </div>

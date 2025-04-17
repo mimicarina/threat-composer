@@ -70,10 +70,10 @@ const ThreatPacks: FC<ThreatPacksProps> = ({
   return (<ContentLayout
     header={<Header
       variant="h2"
-      description="Allow you to quickly find and add bulk or selected threat statements to your current workspace"
+      description="Allow you to quickly find and add bulk or selected risk statements to your current workspace"
       counter={`(${threatPacks.length})`}
     >
-      Threat Packs
+      Risk Packs
     </Header>
     }>
     <SpaceBetween direction='vertical' size='s'>

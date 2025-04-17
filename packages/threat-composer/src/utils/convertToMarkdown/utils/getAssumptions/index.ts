@@ -31,14 +31,14 @@ export const getAssumptionsContent = async (
 
   if (data.assumptions) {
     const promises = data.assumptions?.map(async (x) => {
-      const threatLinks = data.assumptionLinks?.filter(al => al.assumptionId === x.id && al.type === 'Threat') || [];
+      const threatLinks = data.assumptionLinks?.filter(al => al.assumptionId === x.id && al.type === 'Risk') || [];
       const mitigationLinks = data.assumptionLinks?.filter(al => al.assumptionId === x.id && al.type === 'Mitigation') || [];
 
       const threatsContent = threatLinks.map(tl => {
-        const threat = data.threats?.find(s => s.id === tl.linkedId);
-        if (threat) {
-          const threatId = `T-${standardizeNumericId(threat.numericId)}`;
-          return `[**${threatId}**](#${threatId}): ${escapeMarkdown(threat.statement || '')}`;
+        const risk = data.threats?.find(s => s.id === tl.linkedId);
+        if (risk) {
+          const threatId = `T-${standardizeNumericId(risk.numericId)}`;
+          return `[**${threatId}**](#${threatId}): ${escapeMarkdown(risk.statement || '')}`;
         }
         return null;
       }).filter(t => !!t).join('<br/>');

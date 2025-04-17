@@ -29,7 +29,7 @@ export const getThreatsContent = async (
 
   rows.push('\n');
 
-  rows.push(`| Threat Number | Threat | ${threatsOnly ? '' : 'Mitigations | Assumptions |'} Status | Priority | STRIDE | Comments |`);
+  rows.push(`| Risk Number | Risk | ${threatsOnly ? '' : 'Mitigations | Assumptions |'} Status | Priority | STRIDE | Comments |`);
   rows.push(`| --- | --- | ${threatsOnly ? '' : '--- | --- |'} --- | --- | --- | --- |`);
 
   if (data.threats) {

@@ -55,7 +55,7 @@ const EditorThreatSource: FC<EditorProps> = forwardRef<InputProps.Ref, EditorPro
           spellcheck
           onChange={({ detail }) => handleChange(detail.value)}
           value={statement.threatSource || ''}
-          placeholder='Enter threat source'
+          placeholder='Enter risk source'
           validateData={TemplateThreatStatementSchema.shape.threatSource.safeParse}
           stretch
         />

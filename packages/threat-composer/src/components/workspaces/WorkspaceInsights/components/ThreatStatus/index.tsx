@@ -82,9 +82,9 @@ const ThreatStatus: FC<WorkspaceInsightsProps> = ({
         >
           <b>No threats available</b>
           <Box variant="p" color="text-body-secondary">
-            Start by adding a threat to this workspace
+            Start by adding a risk to this workspace
           </Box>
-          <Button variant="primary" onClick={() => handleAddStatement()}>Add a threat</Button>
+          <Button variant="primary" onClick={() => handleAddStatement()}>Add a risk</Button>
         </Box>
       ) : (
         <Box padding="s">
@@ -112,7 +112,7 @@ const ThreatStatus: FC<WorkspaceInsightsProps> = ({
               },
             ]}
             detailPopoverContent={(datum, sum) => [
-              { key: 'Threat count', value: datum.value },
+              { key: 'Risk count', value: datum.value },
               {
                 key: 'Percentage',
                 value: `${((datum.value / sum) * 100).toFixed(0)}%`,

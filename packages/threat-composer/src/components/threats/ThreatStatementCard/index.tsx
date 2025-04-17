@@ -89,7 +89,7 @@ const ThreatStatementCard: FC<ThreatStatementCardProps> = ({
   }, [statement]);
 
   return (<GenericCard
-    header={`Threat ${statement.numericId}`}
+    header={`Risk ${statement.numericId}`}
     entityId={statement.id}
     info={<SpaceBetween direction='horizontal' size='s'>
       <StatusBadge
@@ -120,7 +120,7 @@ const ThreatStatementCard: FC<ThreatStatementCardProps> = ({
           />
           <AssumptionLink
             linkedEntityId={statement.id}
-            type='Threat'
+            type='Risk'
           />
         </SpaceBetween>}
       </ColumnLayout>

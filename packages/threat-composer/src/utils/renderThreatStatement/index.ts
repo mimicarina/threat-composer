@@ -71,30 +71,30 @@ const renderThreatStatement = (statement: TemplateThreatStatement): {
   // Multiple fields are filled
   if (!statement.threatSource) {
     suggestions.push(
-      '[threat_source] Consider specifying who or what is the source of the threat',
+      '[threat_source] Consider specifying who or what is the source of the risk',
     );
   }
 
   if (!statement.prerequisites) {
     suggestions.push(
-      '[prerequisites] Consider what conditions or requirement that must be met in order for a threat sources actions to be viable',
+      '[prerequisites] Consider what conditions or requirement that must be met in order for a risk sources actions to be viable',
     );
     suggestions.push(
-      '[prerequisites] No prerequisites this is often a sign you can decompose into multiple threat statements that have different prerequisites',
+      '[prerequisites] No prerequisites this is often a sign you can decompose into multiple risk statements that have different prerequisites',
     );
   }
 
   if (!statement.threatAction) {
     suggestions.push(
-      '[threat_action] Consider what actions are being performed by, or related to the threat source. Knowing this is required in order to mitigate the threat',
+      '[threat_action] Consider what actions are being performed by, or related to the risk source. Knowing this is required in order to mitigate the risk',
     );
   }
 
   const updatedStatement: TemplateThreatStatement = {
     ...statement,
-    threatSource: statement.threatSource || 'threat source',
+    threatSource: statement.threatSource || 'risk source',
     prerequisites: statement.prerequisites || PLACEHOLDER,
-    threatAction: statement.threatAction || 'perform a threat action',
+    threatAction: statement.threatAction || 'perform a risk action',
   };
 
   const { fieldCombination: updatedFieldCombination } = calculateFieldCombination(updatedStatement);

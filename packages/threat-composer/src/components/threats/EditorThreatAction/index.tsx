@@ -62,7 +62,7 @@ const EditorThreatAction: FC<EditorProps> = forwardRef<TextareaProps.Ref, Editor
           spellcheck
           onChange={({ detail }) => handleChange(detail.value)}
           value={statement.threatAction || ''}
-          placeholder="Enter threat action"
+          placeholder="Enter risk action"
           validateData={TemplateThreatStatementSchema.shape.threatAction.safeParse}
           rows={2}
           singleLine
