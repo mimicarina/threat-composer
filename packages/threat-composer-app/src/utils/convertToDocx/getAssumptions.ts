@@ -61,7 +61,7 @@ const getMitigationLinksCell = (mitigationLinks: AssumptionLink[], data: DataExc
 
 const getDataRow = async (assumption: Assumption, data: DataExchangeFormat) => {
   const assumptionId = `A-${standardizeNumericId(assumption.numericId)}`;
-  const threatLinks = data.assumptionLinks?.filter(al => al.assumptionId === assumption.id && al.type === 'Threat') || [];
+  const threatLinks = data.assumptionLinks?.filter(al => al.assumptionId === assumption.id && al.type === 'Risk') || [];
   const mitigationLinks = data.assumptionLinks?.filter(al => al.assumptionId === assumption.id && al.type === 'Mitigation') || [];
   const renderedComents = await renderComment(assumption.metadata);
 

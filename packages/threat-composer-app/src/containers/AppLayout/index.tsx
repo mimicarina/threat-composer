@@ -48,32 +48,32 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({
   const navigationItems: SideNavigationProps.Item[] = useMemo(() => {
     const navItems: SideNavigationProps.Item[] = [
       {
-        text: 'Dashboard',
+        text: 'Risk Dashboard',
         href: generateUrl(ROUTE_WORKSPACE_HOME_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Application info',
+        text: 'Service Feature Overview',
         href: generateUrl(ROUTE_APPLICATION_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Architecture',
+        text: 'Service Feature Architecture',
         href: generateUrl(ROUTE_ARCHITECTURE_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Dataflow',
+        text: 'Service Feature Inputs and Outputs',
         href: generateUrl(ROUTE_DATAFLOW_INFO_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Assumptions',
+        text: 'Service Feature Assumptions',
         href: generateUrl(ROUTE_ASSUMPTION_LIST_PATH, searchParams, workspaceId),
         type: 'link',
       },
       {
-        text: 'Threats',
+        text: 'Risks',
         href: generateUrl(ROUTE_THREAT_LIST_PATH, searchParams, workspaceId),
         type: 'link',
       },
@@ -84,7 +84,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({
       },
       { type: 'divider' },
       {
-        text: 'Threat model',
+        text: 'Risk Summary Report',
         href: generateUrl(ROUTE_VIEW_THREAT_MODEL_PATH, searchParams, workspaceId),
         type: 'link',
       },
@@ -94,7 +94,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({
         text: 'Reference packs',
         items: [
           {
-            text: 'Threat packs',
+            text: 'Risk packs',
             href: generateUrl(ROUTE_THREAT_PACKS_PATH, searchParams, workspaceId),
             type: 'link',
           },

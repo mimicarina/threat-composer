@@ -121,10 +121,10 @@ const ThreatPrioritization: FC<WorkspaceInsightsProps> = ({
             segmentDescription={(datum, sum) =>
               `${datum.value} threats, ${((datum.value / sum) * 100).toFixed(0)}%`
             }
-            ariaDescription="Pie chart showing the prioritization of threats."
+            ariaDescription="Pie chart showing the prioritization of risks."
             ariaLabel="Pie chart"
             hideFilter
-            innerMetricDescription="Threats"
+            innerMetricDescription="Risks"
             innerMetricValue={statementList.length.toString()}
             variant="donut"
             size="medium"
